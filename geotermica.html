@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='assets/favicon.ico')}}" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic," rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style1.css')}}" />
+    <title>Energía solar</title>
+  </head>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-primary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top" >Energia Renovable</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" >
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/Website/templates/index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <img src="{{url_for('static', filename='assets/imagenes/geo1png.png')}}" class="imag" />
+  <br />
+    <div class="alert alert-light text-black" role="alert" >
+      <p>
+        <center><h3>¿¿Qué es la energía geotérmica?</h3></center> <br> <h5>La energía geotérmica es una fuente de energía renovable que aprovecha el calor almacenado en el interior de la Tierra. Este calor, <br>
+             generado por la descomposición de elementos radiactivos y el calor residual del núcleo terrestre, se utiliza para generar electricidad o calefacción.</h5>
+      </p>
+    </div>
+    <div class="imagenes2">
+      <div class="imagen1" style="width: 35rem;">
+        <img src="{{url_for('static', filename='assets/imagenes/geo2.jpg')}}" class="card-img-top text-black">
+        <div class="card-body">
+          <p class="card-text">¿¿Cómo funciona la energía geotérmica? <br>
+            1.Extracción del calor: El calor se extrae a través de pozos perforados en el subsuelo, donde se encuentra agua o vapor caliente en reservorios geotérmicos. <br>
+            2.Generación de energía: El vapor o agua caliente impulsa turbinas conectadas a generadores eléctricos. <br>
+            3.Uso directo o reinyección: El agua enfriada se reutiliza en sistemas de calefacción o se reinyecta al suelo para mantener el equilibrio del reservorio.</p>
+        </div>
+      </div>
+      <div class="imagen2" style="width: 35rem;">
+        <img src="{{url_for('static', filename='assets/imagenes/geo3.jpg')}}" class="card-img-top text-black">
+        <div class="card-body">
+          <p class="card-text">Tipos de sistemas geotérmicos: <br>
+            1.Centrales geotérmicas: Instalaciones que generan electricidad aprovechando altas temperaturas subterráneas.
+            Sistemas de vapor seco: Usan directamente el vapor subterráneo para mover turbinas.
+            Sistemas de vapor flash: Convierten agua caliente en vapor para generar electricidad.
+            Sistemas de ciclo binario: Utilizan intercambiadores de calor para convertir el calor en vapor de un fluido secundario.. <br>
+            2.Uso directo: Sistemas para calefacción, agua caliente sanitaria y procesos industriales. <br>
+            3.Bomba de calor geotérmica: Extraen el calor del subsuelo a bajas profundidades para climatización en hogares y edificios. </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="card mb-3">
+      <img src="{{url_for('static', filename='assets/imagenes/geo4.png')}}" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">El futuro de la energía geotérmica</h5>
+        <p class="card-text text-black">Países como Islandia, Nueva Zelanda, Filipinas y Estados Unidos lideran el uso de la energía geotérmica. <br>
+             Islandia, por ejemplo, genera más del 25% de su electricidad a partir de fuentes geotérmicas y calienta la mayoría de sus hogares con este recurso.</p>
+      </div>
+    </div>
+    <div class="images3">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="{{url_for('static', filename='assets/imagenes/termi1.png')}}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-center">¿Cómo puedes</h5>
+              <p class="card-text">Infórmate y difunde: Aprende sobre sus beneficios y compártelos en tu comunidad.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{{url_for('static', filename='assets/imagenes/termi2.png')}}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-center">apoyar la</h5>
+              <p class="card-text">Promueve su uso en proyectos locales: Apoya iniciativas que implementen bombas de calor geotérmicas en viviendas y edificios.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{{url_for('static', filename='assets/imagenes/termi3.png')}}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-center">energía geotérmica?</h5>
+              <p class="card-text">Impulsa políticas verdes: Aboga por la inversión en tecnologías geotérmicas y la exploración de su potencial.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h1 class="masthead-heading text-uppercase mb-0 text-center">Conclusión</h1>
+    <div class="alert alert-blue text-center" role="alert"> 
+        La energía geotérmica es una solución renovable que aprovecha el calor natural de la Tierra para generar energía limpia y sostenible. Con su potencial para suministrar electricidad y calor constante, <br> 
+        esta fuente energética es un pilar importante en la lucha contra el cambio climático y la transición hacia un sistema energético más verde.
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static', filename='js/scripts.js')}}" ></script>
+</html>

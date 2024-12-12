@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='assets/favicon.ico')}}" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic," rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/styles.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style1.css')}}" />
+    <title>Energía solar</title>
+  </head>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-primary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top" >Energia Renovable</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" >
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/Website/templates/index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <img src="{{url_for('static', filename='assets/imagenes/OELICA2.png')}}" class="imag" />
+  <br />
+    <div class="alert alert-light text-black" role="alert" >
+      <p>
+        <center><h3>¿Qué es la energía eólica?</h3></center> <br> <h5>La energía eólica es una fuente de energía
+        renovable que utiliza la fuerza del viento para generar electricidad. <br> A
+        través de turbinas eólicas, el movimiento del aire se convierte en energía
+        mecánica y luego en energía eléctrica, <br> ofreciendo una solución sostenible
+        y limpia frente a los combustibles fósiles.</h5>
+      </p>
+    </div>
+    <div class="imagenes2">
+      <div class="imagen1" style="width: 35rem;">
+        <img src="{{url_for('static', filename='assets/imagenes/eoli.jpg')}}" class="card-img-top text-black">
+        <div class="card-body">
+          <p class="card-text">¿Cómo funciona la energía eólica? <br>
+            1.Captación del viento: Las turbinas eólicas, que constan de aspas largas conectadas a un rotor, capturan la energía cinética del viento. <br>
+            2.Conversión de energía: El rotor gira con el viento, moviendo un generador que convierte la energía mecánica en electricidad. <br>
+            3.Distribución: La electricidad generada se conecta a redes eléctricas o se almacena en sistemas de baterías para su uso posterior.</p>
+        </div>
+      </div>
+      <div class="imagen2" style="width: 35rem;">
+        <img src="{{url_for('static', filename='assets/imagenes/eoli2.jpg')}}" class="card-img-top text-black">
+        <div class="card-body">
+          <p class="card-text">Tipos de turbinas eólicas: <br>
+            1.Turbinas terrestres: Instaladas en tierra firme, comúnmente en zonas rurales o montañosas con vientos consistentes. <br>
+            2.Turbinas marinas: Situadas en el mar, donde los vientos son más fuertes y constantes, lo que permite generar más energía. <br>
+            3.Turbinas de eje horizontal y vertical: La mayoría son de eje horizontal, pero las de eje vertical son ideales para espacios más reducidos..</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="card mb-3">
+      <img src="{{url_for('static', filename='assets/imagenes/eoli3.png')}}" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">El futuro de la energía eólica</h5>
+        <p class="card-text text-black">La energía eólica es una de las formas de energía renovable de más rápido crecimiento. Países como China, Estados Unidos, y Alemania lideran en capacidad instalada, mientras que regiones emergentes están adoptando esta tecnología para diversificar sus fuentes de energía. <br>
+          Con avances en tecnología, como turbinas más eficientes y sistemas de almacenamiento de energía, la energía eólica está destinada a jugar un papel clave en la transición hacia un sistema energético global sostenible. La expansión de los parques eólicos marinos y la integración de turbinas en áreas urbanas son tendencias prometedoras.</p>
+      </div>
+    </div>
+    <div class="images3">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="{{url_for('static', filename='assets/imagenes/caru1.png')}}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-center">¿Cómo puedes</h5>
+              <p class="card-text">Opta por electricidad renovable: Muchas compañías eléctricas ofrecen planes que incluyen energía eólica.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{{url_for('static', filename='assets/imagenes/caru2.png')}}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-center">apoyar la</h5>
+              <p class="card-text">Infórmate y difunde: Comparte los beneficios de la energía eólica con tu comunidad.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="{{url_for('static', filename='assets/imagenes/caru3.png')}}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-center">energía eólica?</h5>
+              <p class="card-text">Apoya políticas verdes: Apoya iniciativas que promuevan la transición hacia energías renovables.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h1 class="masthead-heading text-uppercase mb-0 text-center">Conclusión</h1>
+    <div class="alert alert-blue text-center" role="alert"> 
+      La energía eólica representa una oportunidad única para reducir la dependencia de los combustibles fósiles y combatir el cambio climático. <br>
+      Su crecimiento global destaca la importancia de invertir en fuentes limpias para asegurar un futuro energético sostenible y resiliente.
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static', filename='js/scripts.js')}}" ></script>
+</html>
